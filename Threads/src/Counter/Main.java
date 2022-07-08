@@ -30,6 +30,7 @@ class Countdown {
                 break;
             default:
                 color = ThreadColor.ANSI_GREEN;
+
         }
 
         /*String color = switch (Thread.currentThread().getName()) {

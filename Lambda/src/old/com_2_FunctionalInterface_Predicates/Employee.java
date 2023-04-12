@@ -1,4 +1,4 @@
-package com_2_FunctionalInterface_Predicates;
+package old.com_2_FunctionalInterface_Predicates;
 
 public class Employee {
   private String name;

@@ -9,7 +9,7 @@ import java.util.function.BinaryOperator;
 public class Main {
   public static void main(String[] args) {
     //
-    List<String> list = new ArrayList<>(List.of("alpha", "bravo", "charlie", "delta"));
+    List<String> list = new ArrayList<>(List.of("alpha", "bravo", "charlie", "delta", "echo"));
     for (String s : list) {
       System.out.println(s);
     }
@@ -67,6 +67,13 @@ public class Main {
     System.out.println("=======================================");
     // Predicate Interface
     list.removeIf(s -> s.equalsIgnoreCase("ALPHA"));
+    list.forEach(s -> System.out.println(s));
+
+    System.out.println("=======================================");
+    // Function Interface
+
+    // Unary Operattor ~ function Interface
+    list.replaceAll(s -> s.charAt(0) + " - " + s.toUpperCase());
     list.forEach(s -> System.out.println(s));
   }
 

@@ -1,4 +1,4 @@
-package next.com_3_challenge;
+package next.com_3_challenge_1;
 
 import java.util.Arrays;
 import java.util.function.Consumer;

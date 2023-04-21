@@ -10,8 +10,8 @@ public class Main {
     Function<String, String> uCase = String::toUpperCase;
     System.out.println(uCase.apply(name));
 
-    Function<String,String> lastName = s -> s.concat(" Verma");
-    Function<String,String> uCaseLastName = uCase.andThen(lastName);
+    Function<String, String> lastName = s -> s.concat(" Verma");
+    Function<String, String> uCaseLastName = uCase.andThen(lastName);
     System.out.println(uCaseLastName.apply(name));
-   }
+  }
 }

@@ -18,5 +18,6 @@ public class Main {
     System.out.println("---- Print using for loop using lambda operation ----");
     // Print using for loop using lambda operation
     list.forEach(item -> System.out.println(item));
+
   }
 }

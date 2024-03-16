@@ -9,7 +9,6 @@ import java.util.function.Predicate;
 public class Main {
   public static void main(String[] args) {
     // Basic
-
     Predicate<Integer> pred1 = object -> (object > 10);
     System.out.println(pred1.test(12));
     System.out.println(pred1.test(10));

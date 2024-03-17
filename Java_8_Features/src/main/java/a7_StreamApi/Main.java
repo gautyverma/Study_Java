@@ -38,6 +38,9 @@ public class Main {
         list1.stream().filter(i -> i % 2 != 0).map(i -> i * i).collect(Collectors.toList());
     System.out.println(collectMap);
 
-
+    // --- count ---
+    System.out.println("--- count ---");
+    long count = list1.stream().filter(i -> i % 2 == 0).count();
+    System.out.println("Even number count : "+count);
   }
 }

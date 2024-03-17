@@ -41,6 +41,19 @@ public class Main {
     // --- count ---
     System.out.println("--- count ---");
     long count = list1.stream().filter(i -> i % 2 == 0).count();
-    System.out.println("Even number count : "+count);
+    System.out.println("Even number count : " + count);
+
+    // --- sorting ---
+    System.out.println("--- sorting ---");
+
+    System.out.println("--- Custom sorting order ---");
+    List<Integer> sortedCustomList =
+        list1.stream().sorted((s1, s2) -> s2.compareTo(s1)).collect(Collectors.toList());
+    System.out.println(sortedCustomList);
+
+    System.out.println("--- Natural sorting order ---");
+    List<Integer> sortedNaturalList =
+        sortedCustomList.stream().sorted().collect(Collectors.toList());
+    System.out.println(sortedNaturalList);
   }
 }

@@ -8,6 +8,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
+    // Threads implementation
     Runnable r1 =
         () -> {
           for (int i = 0; i < 5; i++) {

@@ -55,5 +55,17 @@ public class Main {
     List<Integer> sortedNaturalList =
         sortedCustomList.stream().sorted().collect(Collectors.toList());
     System.out.println(sortedNaturalList);
+
+    // --- Min and Max ---
+    System.out.println("--- Min Value ---");
+    Integer minInteger = list1.stream().min((s1, s2) -> s1.compareTo(s2)).get();
+    System.out.println(minInteger);
+    System.out.println(
+        list1.stream().min((s1, s2) -> s2.compareTo(s1)).get()
+            + " - If we change the compare values ift gives opposite result");
+
+    System.out.println("--- Max Value ---");
+    Integer maxInteger = list1.stream().max((s1, s2) -> s1.compareTo(s2)).get();
+    System.out.println(maxInteger);
   }
 }

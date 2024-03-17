@@ -67,5 +67,22 @@ public class Main {
     System.out.println("--- Max Value ---");
     Integer maxInteger = list1.stream().max((s1, s2) -> s1.compareTo(s2)).get();
     System.out.println(maxInteger);
+
+    // forEach - it does not return just do defined operation
+    System.out.println("--- forEach ---");
+    list1.stream().forEach(System.out::print);
+    System.out.println();
+    list1.stream().forEach(s -> System.out.print(s + ", "));
+    System.out.println();
+
+    // ToArray()
+    System.out.println("--- ToArray ---");
+    Integer[] array = list1.stream().toArray(Integer[]::new);
+    System.out.println(array[0]);
+
+    // Stream.of()
+    System.out.println("--- Stream ---");
+    Stream s = Stream.of(99999, 999, 999);
+    s.forEach(System.out::println);
   }
 }

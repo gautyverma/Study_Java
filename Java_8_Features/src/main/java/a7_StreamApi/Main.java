@@ -23,12 +23,21 @@ import java.util.stream.Stream;
 public class Main {
   public static void main(String[] args) {
 
-    // collect
+    // --- collect ---
+    System.out.println("--- collect ---");
     ArrayList<Integer> list1 = new ArrayList<>();
     for (int i = 1; i < 11; i++) {
       list1.add(i);
     }
     List<Integer> collect = list1.stream().filter(i -> i % 2 == 0).collect(Collectors.toList());
     System.out.println(collect);
+
+    // --- collect & map ---
+    System.out.println("--- collect & map ---");
+    List<Integer> collectMap =
+        list1.stream().filter(i -> i % 2 != 0).map(i -> i * i).collect(Collectors.toList());
+    System.out.println(collectMap);
+
+
   }
 }

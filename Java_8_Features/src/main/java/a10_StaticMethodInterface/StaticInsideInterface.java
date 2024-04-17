@@ -1,4 +1,4 @@
-package misc;
+package a10_StaticMethodInterface;
 
 interface staticInside {
   public static void display() {

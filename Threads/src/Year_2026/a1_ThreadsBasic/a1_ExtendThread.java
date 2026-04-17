@@ -1,4 +1,4 @@
-package Year_2026.a1_UsingExtendThreadClass;
+package Year_2026.a1_ThreadsBasic;
 
 import Year_2026.ThreadColor;
 
